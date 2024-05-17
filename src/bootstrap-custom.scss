@@ -1,0 +1,23 @@
+/* index.css */
+
+// Import Bootstrap's SCSS files
+/* src/index.css */
+
+// Import Bootstrap's SCSS files
+@import "../../node_modules/bootstrap/scss/bootstrap/functions";
+@import "../../node_modules/bootstrap/scss/bootstrap/variables";
+@import "../../node_modules/bootstrap/scss/bootstrap";
+
+
+// Define custom CSS variables
+:root {
+  --primary-button-bg-color: #ffffff; /* White color */
+}
+
+// Override Bootstrap's variables with CSS variables
+$btn-primary-bg: var(--primary-button-bg-color); /* Use custom primary button background color */
+
+// Use CSS variables in your styles
+.btn-primary {
+  background-color: var(--primary-button-bg-color); /* Use custom primary button background color */
+}
